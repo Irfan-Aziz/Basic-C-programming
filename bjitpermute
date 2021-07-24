@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+int i,j,k;
+char a[100];
+gets(a);}
+void swap(char a, char b){
+char temp;
+temp=a;
+a=b;
+b=temp;}
+void permute(char x, int s, int e){
+int i;
+if(s==e)
+printf("%s\n",x);
+else{
+for(i=s;i<=e;i++){
+swap((x+s),(x+i));
+permute(x,s+1,e);
+swap((x+s),(x+i));}}}
